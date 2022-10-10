@@ -1,0 +1,52 @@
+{
+  "name": "ngx-file-upload-demo",
+  "version": "0.0.1",
+  "author": "Ivan Pintar",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "clean": "rm -rf dist",
+    "copy:files": "copy README.md .\\dist\\lib\\ && copy LICENSE .\\dist\\lib\\",
+    "build:git:demo": "ng build --prod",
+    "build:library": "ng test ngx-library && ng build ngx-library && npm run copy:files && npm run build:git:demo",
+    "build:publish": "npm publish dist/lib/ --access public --tag=latest"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.0.2",
+    "@angular/common": "~13.0.2",
+    "@angular/compiler": "~13.0.2",
+    "@angular/core": "~13.0.2",
+    "@angular/forms": "~13.0.2",
+    "@angular/platform-browser": "~13.0.2",
+    "@angular/platform-browser-dynamic": "~13.0.2",
+    "@angular/router": "~13.0.2",
+    "bootstrap": "4.3.1",
+    "google-code-prettify": "1.0.5",
+    "rxjs": "~6.6.3",
+    "tslib": "^2.3.1",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~13.0.3",
+    "@angular/cli": "~13.0.3",
+    "@angular/compiler-cli": "~13.0.2",
+    "@angular/language-service": "~13.0.2",
+    "@types/node": "^12.11.1",
+    "@types/jasmine": "~3.6.0",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "^6.0.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "ng-packagr": "^13.0.8",
+    "protractor": "~7.0.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.4.4"
+  }
+}
