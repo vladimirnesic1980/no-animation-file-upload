@@ -1,33 +1,17 @@
 {
-  "name": "@iplab/ngx-file-upload",
-  "description": "",
-  "homepage": "https://github.com/pIvan/file-upload",
-  "bugs": "https://github.com/pIvan/file-upload/issues",
-  "version": "3.3.3",
-  "author": "Ivan Pintar",
-  "license": "MIT",
-  "readmeFilename": "README.md",
-  "keywords": [
-    "file-upload",
-    "drag & drop",
-    "drag and drop",
-    "file upload",
-    "forms",
-    "angular",
-    "ng-rxjs",
-    "rxjs 6",
-    "angular form",
-    "JavaScript",
-    "TypeScript"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pIvan/file-upload.git"
-  },
+  "name": "@avs/no-animation-file-upload",
+  "version": "1.2.0",
   "peerDependencies": {
     "@angular/common": "^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
     "@angular/core": "^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
-    "@angular/animations": "^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
-    "rxjs": "^6.4.0"
-  }
+    "rxjs": "^7.5.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": "AvsSolution",
+  "license": "MIT",
+  "files": [
+    "*"
+  ]
 }
